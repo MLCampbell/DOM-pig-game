@@ -1,15 +1,70 @@
-body:before {
-        content: ' ';
-        display: flex;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        opacity: 0.6;
-        background-image: url('img/dice-bg.jpg');
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        background-size: cover;
+/* * {
+        background: #000 !important;
+        color: #0f0 !important;
+        outline: solid #f00 1px !important;
+    } */
+
+html {
+  background: url("img/dice-bg.jpg") no-repeat 80% -20% fixed;
+  background-size: cover;
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  background: none;
+  font-family: "Reenie Beanie", cursive;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main {
+  height: 100%;
+}
+.container-main {
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+  max-width: 90vw;
+  background-color: rgba(245, 245, 245, 0.924);
+  min-height: 60vh;
+}
+
+.dice-img {
+  max-height: 125px;
+}
+.navbar a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.945);
+  text-shadow: 1px 0px 3px rgba(144, 3, 3, 0.698);
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar a {
+    font-size: 2rem;
+  }
+}
+
+.player-title {
+  font-size: 4rem;
+}
+
+.row-main {
+  padding-top: 5rem;
+}
+
+footer {
+  font-family: "Arial", sans-serif;
+  font-weight: lighter;
+  font-size: 0.7rem;
+}
+
+button {
+  font-size: 1.8rem;
+}
+
+button:hover {
+  transform: translate(1%, 1%);
+  box-shadow: 1px 1px 5px crimson;
 }
