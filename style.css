@@ -19,18 +19,6 @@ body {
   height: fit-content;
 }
 
-.active {
-  background-color: rgba(131, 31, 51, 0.123);
-}
-
-.active .player-name {
-  font-weight: bolder;
-  color: rgb(0, 0, 0);
-}
-
-.active .player-current-box {
-  box-shadow: 2px 2px 3px rgb(80, 80, 80);
-}
 /***************************************
  Main */
 main {
@@ -46,6 +34,10 @@ main {
 
 .row-main {
   padding-top: 5rem;
+}
+
+.active {
+  background-color: rgba(131, 31, 51, 0.123);
 }
 
 /***************************************
@@ -68,6 +60,11 @@ main {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.active .player-name {
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
 .player-current-box {
   background-color: rgb(131, 31, 51);
   color: whitesmoke;
@@ -76,8 +73,12 @@ main {
   width: fit-content;
   padding: 0% 10% 0% 10%;
   border-radius: 0.3rem;
-  box-shadow: 3px 3px 4px inset rgb(31, 31, 31);
+  box-shadow: 2px 2px 3px rgb(80, 80, 80);
   margin-top: 2rem;
+}
+
+.active .player-current-box {
+  box-shadow: 3px 3px 4px inset rgb(31, 31, 31);
 }
 
 .player-current-label {

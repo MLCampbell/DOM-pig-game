@@ -19,9 +19,11 @@ dice = Math.floor(Math.random() * 6) + 1;
 console.log(dice);
 
 document.querySelector('#current-' + activePlayer).textContent = dice;
-// document.querySelector('#current-' + activePlayer).innerHTML = '<u>' + dice + '</u>'
 
 var x = document.querySelector('#score-' + activePlayer).textContent;
 console.log(x);
 
 document.querySelector('.dice-img').style.visibility = 'hidden';
+
+document.querySelector('#panel-' + activePlayer).classList.add('active');
+
