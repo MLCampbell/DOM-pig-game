@@ -104,6 +104,12 @@ button:hover {
   box-shadow: 1px 1px 5px rgb(131, 31, 51);
 }
 
+.switch-players {
+  color: rgb(190, 24, 57);
+  font-size: 3rem;
+  font-weight: 600;
+  min-height: 100px;
+}
 /***************************************
  Footer */
 footer {
