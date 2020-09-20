@@ -2,65 +2,67 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <title>The DOM Pig Game</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <title>The DOM Pig Game</title>
+
 </head>
 
 <body>
-    <nav class="navbar pt-2 mt-2">
-        <p class="mx-auto" href="#">The Pig Game</p>
+    <nav><p>The Pig Game</p></nav>
 
-    </nav>
     <main>
         <!-- Container main -->
         <div class="container container-main pb-4">
             <!-- Row Main -->
-            <div class="row row-main justify-content-center">
+            <div class="row row-main justify-content-around">
 
                 <!-- Actions container -->
-                <div class="actions-col col-10 col-md-3 order-md-2 my-3 my-md-0">
-                    <div class="row justify-content-center pb-4">
-                        <div class="col-12 text-center switch-players">
-                            <!-- score lost text in here from script -->
-                        </div>
-                    </div>
-                    <div class="row justify-content-around mt-md-2 mb-5">
-                        <div class="col-4 col-md-12 text-center pb-md-3">
-                            <button class="btn-new text-center h-100">
+                <div class="actions-col col-12 order-sm-1">
+
+                    <div class="row justify-content-center mt-md-2">
+
+                        <div class="col-4 text-center">
+                            <button class="btn-new text-center player-buttons">
                                 <i class="fa fa-plus-circle" aria-hidden="true"></i> New Game
                             </button>
                         </div>
-                        <div class="col-4 col-md-12 text-center py-md-3">
-                            <button class="btn-roll text-center h-100">
-                                <i class="fa fa-refresh" aria-hidden="true"></i> Roll Dice
-                            </button>
-                        </div>
-                        <div class="col-4 col-md-12 text-center py-md-3 ">
-                            <button class="btn-hold text-center h-100">
+
+                        <div class="col-4 text-center">
+                            <button class="btn-hold text-center player-buttons">
                                 <i class="fa fa-pause-circle-o" aria-hidden="true"></i> Bank Score
                             </button>
                         </div>
-                    </div>
-                    <div class="row-cols-1 justify-content-center">
-                        <div class="col text-center">
-                            <div><img class="dice-img img-fluid" src="./img/kismet-2.png" alt="dice"></div>
+                        <div class="col-4 text-center">
+                            <button class="btn-roll text-center player-buttons">
+                                <i class="fa fa-refresh" aria-hidden="true"> </i> Roll Dice
+                            </button>
+                        </div>
+
+                        <div class="col-12 col-md-5 text-center info-wrapper align-items-center my-4">
+                            <div class="info-text"><span>Roll your dice.</span></div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Dice image container  -->
+                <div class="col-sm-4 col-12 text-center order-sm-3">
+                    <img class="dice-img img-fluid" src="./img/dice6.png" alt="dice">
+                </div>
+
                 <!-- Player 0 container -->
-                <div class="player-0-panel col-5 col-sm-4 text-center order-md-1 p-2 active" id="panel-0">
+                <div class="player-0-panel col-5 col-sm-4 text-center px-2 py-3 active order-sm-2" id="panel-0">
                     <div>
                         <h1 class="player-name" id="name-0">Player 1</h1>
                     </div>
@@ -72,9 +74,10 @@
                         <div class="player-current-score" id="current-0">error</div>
                     </div>
                 </div>
+                
 
                 <!-- Player 1 container -->
-                <div class="player-1-panel col-5 col-sm-4 text-center order-md-3 p-2" id="panel-1">
+                <div class="player-1-panel col-5 col-sm-4 text-center px-2 py-3 order-sm-4" id="panel-1">
                     <div>
                         <h1 class="player-name" id="name-1">Player 2</h1>
                     </div>
@@ -86,7 +89,7 @@
                         <div class="player-current-score" id="current-1">error</div>
                     </div>
                 </div>
-
+               
             </div>
             <!-- end row main -->
         </div>
