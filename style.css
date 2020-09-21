@@ -20,8 +20,11 @@ body {
 
 /***************************************
  Main */
-main {
+
+.display-none {
+  display: none;
 }
+
 .container-main {
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -103,11 +106,23 @@ nav p {
 button {
   font-size: 1.8rem;
   padding: 2rem;
+  height: 100%;
 }
 
 button:hover {
   transform: translate(1%, 1%);
   box-shadow: 1px 1px 5px var(--primary-green);
+}
+
+.no-hover{
+  pointer-events: none;
+}
+
+.instruction-list {
+  list-style: none;
+  color: whitesmoke;
+  line-height: 2rem;
+  margin-top: 4rem;
 }
 
 .info-wrapper {
@@ -124,7 +139,6 @@ button:hover {
 }
 
 .info-text span {
-  font-size: 1rem;
   font-weight: 600;
   font-size: 2.5rem;
 }
@@ -133,6 +147,13 @@ button:hover {
   color: rgb(209, 14, 14);
   -webkit-animation: blink-1 0.6s both;
   animation: blink-1 0.6s both;
+}
+
+.wins {
+  color: var(--primary-green);
+  -webkit-animation: blink-1 0.6s both;
+  animation: blink-1 0.6s both;
+  text-shadow: 1px 1px black;
 }
 
 @-webkit-keyframes blink-1 {
@@ -173,7 +194,7 @@ footer {
 
 /***************************************
  Media queries */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   html {
     font-size: 13px;
   }
@@ -186,12 +207,16 @@ footer {
   .info-wrapper {
     height: auto;
   }
+  .info-text span {
+    font-size: 1.5rem;
+  }
   .container-main {
     max-width: 95%;
   }
   .dice-img {
     max-height: 7rem;
     margin-bottom: 2rem;
+    margin-top: 1.5rem;
   }
   .info-wrapper {
     margin: 2rem inherit;
@@ -209,7 +234,15 @@ footer {
   }
   button {
     padding: 0 0.2rem;
-    min-height: 6rem;
+    font-size: 1rem;
+  }
+  .instruction-list {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1rem;
+  }
+  #instruction-dice-wrapper{
+    min-height: 150px;
   }
 }
 
@@ -217,4 +250,5 @@ footer {
   .dice-img {
     margin-top:26%;
   }
+}
 }

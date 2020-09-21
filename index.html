@@ -34,35 +34,45 @@
                     <div class="row justify-content-center mt-md-2">
 
                         <div class="col-4 text-center">
-                            <button class="btn-new text-center player-buttons">
+                            <button class="btn-new text-center">
                                 <i class="fa fa-plus-circle" aria-hidden="true"></i> New Game
                             </button>
                         </div>
 
                         <div class="col-4 text-center">
-                            <button class="btn-hold text-center player-buttons">
+                            <button class="btn-bank text-center btn-hoverable">
                                 <i class="fa fa-pause-circle-o" aria-hidden="true"></i> Bank Score
                             </button>
                         </div>
                         <div class="col-4 text-center">
-                            <button class="btn-roll text-center player-buttons">
+                            <button class="btn-roll text-center btn-hoverable">
                                 <i class="fa fa-refresh" aria-hidden="true"> </i> Roll Dice
                             </button>
                         </div>
 
-                        <div class="col-12 col-md-5 text-center info-wrapper align-items-center my-4">
-                            <div class="info-text"><span>Roll your dice.</span></div>
+                        <div class="col-11 col-md-9 text-center info-wrapper align-items-center my-4">
+                            <div class="info-text"><span class="">Roll your dice.</span></div>
                         </div>
                     </div>
                 </div>
 
+                
+
+
+
                 <!-- Dice image container  -->
-                <div class="col-sm-4 col-12 text-center order-sm-3">
+                <div id="instruction-dice-wrapper" class="col-sm-4 col-12 text-center order-sm-3">
+                    <div class="instruction-list display-none">
+                        <p>Roll the dice</p>
+                        <p>Bank your score</p>
+                        <p>Reach 100 banked score to win</p>
+                        <p>Roll a '1' and lose your current score!</p>
+                    </div>
                     <img class="dice-img img-fluid" src="./img/dice6.png" alt="dice">
                 </div>
 
                 <!-- Player 0 container -->
-                <div class="player-0-panel col-5 col-sm-4 text-center px-2 py-3 active order-sm-2" id="panel-0">
+                <div class="player-0-panel col-5 col-sm-4 text-center px-2 py-3 order-sm-2" id="panel-0">
                     <div>
                         <h1 class="player-name" id="name-0">Player 1</h1>
                     </div>
@@ -77,7 +87,7 @@
                 
 
                 <!-- Player 1 container -->
-                <div class="player-1-panel col-5 col-sm-4 text-center px-2 py-3 order-sm-4" id="panel-1">
+                <div class="player-1-panel col-5 col-sm-4 text-center px-2 py-3 order-sm-4 active" id="panel-1">
                     <div>
                         <h1 class="player-name" id="name-1">Player 2</h1>
                     </div>
