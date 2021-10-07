@@ -1,2 +1,2 @@
 # DOM-pig-game
-A simple browser game of dice. Practicing DOM manipulation.
+A  browser game of dice. Practicing DOM manipulation in Vanilla JS.
